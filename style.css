@@ -1,10 +1,50 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
 .box_cabecalho{
     display: flex;
-    height: 1rem;
+    justify-content: space-around;
+    height: 70px;
     width: 100%;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
     background-color: aquamarine;
 }
+
+.logo{
+    width: 120px;
+    height: 70px;
+    background-repeat: no-repeat;
+    /* background-position-y: -40px; */
+    overflow: hidden;
+    background-color: black;
+}
+
+nav {
+    width: 70%;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    transition: .5s;
+    width: 100px;
+}
+
+nav a:hover {
+    color: white;
+    background: #003423;
+}
+
 .categoria{
     display: flex;
     height: 1.5rem;
@@ -22,11 +62,11 @@
     margin: 1em;
     background-color: blue;
 }
-.logo{
-    width: 120px;
-    height: 70px;
-    background-repeat: no-repeat;
-    background-position-y: -40px;
-    overflow: hidden;
-    background-color: black;
+
+
+
+
+
+section {
+    min-height: 100vh;
 }
