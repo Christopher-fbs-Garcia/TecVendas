@@ -104,8 +104,14 @@ nav a:hover {
 .local_preco {
     height: 15%;
     width: 100%;
-    background-color: violet;
+    background-color: white;
     display: flex;
+    transition: 0.5s;
+}
+
+.local_preco:hover {
+    color: white;
+    background-color: black;
 }
 
 /* rodapé */
