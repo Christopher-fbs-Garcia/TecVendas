@@ -119,10 +119,14 @@ nav a:hover {
 
 
 
-@media (max-width :900px) {
+
+
+@media (max-width :1000px) {
     .box_produtos {
         flex-direction: column;
     }
+
+
 }
 
 
