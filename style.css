@@ -1,12 +1,16 @@
 body{
     height: 100vh;
+    width: 100%;
+    /* overflow: hidden; */
     background-color: #464646;
 }
+
 * {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
 }
+
 
 /*Cabeçalho estilado*/
 .box_cabecalho{
@@ -16,6 +20,7 @@ body{
     width: 100%;
     padding: 1rem, 0;
     background-color: rgb(146, 146, 146);
+    overflow: hidden;
 }
 .ajuste_de_cabecalho{
     width: 10%;
@@ -53,7 +58,7 @@ nav a {
     text-align: center;
     padding: 10px;
     transition: .5s;
-    width: 140px;
+    width: 150px;
 }
 
 nav a:hover {
@@ -71,18 +76,54 @@ nav a:hover {
 .box_produtos{
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .card {
-    height: 16.5rem;
-    width: 15rem;
+    height: 24rem;
+    width: 18rem;
     align-items: start;
     justify-content: center;
-    margin: 1em;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    margin-right: 2rem;
     background-color: blue;
 }
 
+.local_produtos {
+    height: 80%;
+    width: 100%;
+    margin-bottom: 7%;
+    background-color: blanchedalmond;
+    display: flex;
+}
 
+.local_preco{
+    height: 15%;
+    width: 100%;
+    background-color: violet;
+    display: flex;
+}
+
+/* rodapé */
+
+.box_rodape{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    padding: 1rem, 0;
+    background-color: rgb(146, 146, 146);
+}
+
+
+
+@media (max-width :900px) {
+    .box_produtos {
+        flex-direction: column;
+    }
+}
 
 
 
