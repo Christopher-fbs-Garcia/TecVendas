@@ -3,6 +3,7 @@ body {
     width: 100%;
     /* overflow: hidden; */
     background-color: #2b2a33;
+    background-repeat: round;
 }
 
 * {
@@ -16,12 +17,11 @@ body {
 .box_cabecalho {
     display: flex;
     justify-content: space-between;
-    height: 8%;
+    height: 15%;
     width: 100%;
     padding: 1rem, 0;
     /* background-color: #131921; */
     overflow: hidden;
-    
 }
 
 .ajuste_de_cabecalho {
@@ -73,6 +73,49 @@ nav a::after:hover {
     background: white;
 }
 
+.menu-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsividade: quando a tela é menor que 768px */
+@media (max-width: 800px) {
+
+    /* Ocultar o menu horizontal em telas pequenas */
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 9%;
+        left: 25%;
+        background-color: #333;
+        width: 100%;
+        padding: 10px 0;
+
+    }
+
+    /* Exibir o ícone do menu */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Exibir o menu quando o estado "active" for aplicado */
+    nav.active {
+        display: flex;
+    
+    }
+
+    /* Ajuste nos links para melhorar a usabilidade */
+    nav a {
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+    }
+}
+
 .categoria {
     display: flex;
     height: 1.5rem;
@@ -105,7 +148,7 @@ nav a::after:hover {
     margin-bottom: 7%;
     background-color: white;
     display: flex;
-    border-radius: 2%;
+    border-radius: 3%;
 }
 
 .local_preco {
@@ -125,30 +168,55 @@ nav a::after:hover {
     background-color: black;
 } */
 
+/* Porra de Texto */
+
+.penis_de_texto
+{
+    min-height: calc(77vh - 40px);
+    padding-bottom: 40px;
+    overflow: auto;
+    text-decoration: none;
+    color: white;
+    padding-left: 15%;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 /* rodapé */
 
 .box_rodape {
     display: flex;
-    justify-content: space-between;
-    height: 70px;
+    justify-content: space-around;
+    height: 60px;
     width: 100%;
     padding: 1rem, 0;
-    background-color: rgb(146, 146, 146);
+    background-color: #131921;
+    position: sticky;
+    bottom: 0;
 }
 
+.perfect_rodapé
+{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-
-
-
-@media (max-width :1000px) {
+@media (max-width :800px) {
     .box_produtos {
         flex-direction: column;
     }
+    
+    .box_rodape
+    {
+        background-color: transparent;
+        
+        
 
+    }
 
 }
-
-
 
 section {
     min-height: 100vh;
