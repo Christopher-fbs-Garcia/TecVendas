@@ -54,6 +54,7 @@ nav a {
     transition: .5s;
     width: 150px;
     color: white;
+    
 }
 
 nav a:hover {
@@ -88,9 +89,9 @@ nav a::after:hover {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 9%;
+        /* top: 9%; */
         left: 25%;
-        background-color: #333;
+        background-color: #132c52;
         width: 100%;
         padding: 10px 0;
 
@@ -129,6 +130,7 @@ nav a::after:hover {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    min-height: calc(68vh - 30px);
 }
 
 .card {
@@ -136,7 +138,7 @@ nav a::after:hover {
     width: 18rem;
     align-items: center;
     justify-content: center;
-    margin-left: 3rem;
+    margin-left: 2rem;
     margin-top: 3rem;
     margin-right: 2rem;
     border-radius: 5%;
@@ -152,9 +154,6 @@ nav a::after:hover {
 .card:hover {
     height: 24.5rem;
     width: 18.5rem;
-
-
-
 }
 
 .local_produtos {
@@ -173,6 +172,12 @@ nav a::after:hover {
     border-radius: 5%;
     border-style: solid;
     border-color: white;
+
+    /* fonte */
+    font-size: 120%;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
 
 }
 
@@ -224,9 +229,6 @@ nav a::after:hover {
     .box_rodape
     {
         background-color: transparent;
-         
-        
-
     }
 
 }
