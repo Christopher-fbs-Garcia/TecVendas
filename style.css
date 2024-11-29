@@ -2,7 +2,7 @@ body {
     height: 100vh;
     width: 100%;
     /* overflow: hidden; */
-    background-color: #2b2a33;
+    background-color: #677790;
     background-repeat: round;
 }
 
@@ -20,7 +20,7 @@ body {
     height: 15%;
     width: 100%;
     padding: 1rem, 0;
-    /* background-color: #131921; */
+    background-color: #132c52;
     overflow: hidden;
 }
 
@@ -134,12 +134,27 @@ nav a::after:hover {
 .card {
     height: 24rem;
     width: 18rem;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     margin-left: 3rem;
     margin-top: 3rem;
     margin-right: 2rem;
     border-radius: 5%;
+    transition: 0.5s;
+
+}
+.card img {
+    max-width: 100%; /* A imagem ocupa no máximo 80% da largura da box */
+    max-height: 100%; /* A imagem ocupa no máximo 80% da altura da box */
+    object-fit: contain; /* A imagem mantém sua proporção sem ultrapassar os limites da box */
+}
+
+.card:hover {
+    height: 24.5rem;
+    width: 18.5rem;
+
+
+
 }
 
 .local_produtos {
@@ -155,7 +170,6 @@ nav a::after:hover {
     height: 15%;
     width: 100%;
     display: flex;
-    transition: 0.5s;
     border-radius: 5%;
     border-style: solid;
     border-color: white;
@@ -168,9 +182,8 @@ nav a::after:hover {
     background-color: black;
 } */
 
-/* Porra de Texto */
 
-.penis_de_texto
+.texto_index
 {
     min-height: calc(77vh - 40px);
     padding-bottom: 40px;
@@ -190,7 +203,7 @@ nav a::after:hover {
     height: 60px;
     width: 100%;
     padding: 1rem, 0;
-    background-color: #131921;
+    background-color: #132c52;
     position: sticky;
     bottom: 0;
 }
@@ -200,7 +213,7 @@ nav a::after:hover {
     width: 55%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 @media (max-width :800px) {
@@ -211,7 +224,7 @@ nav a::after:hover {
     .box_rodape
     {
         background-color: transparent;
-        
+         
         
 
     }
