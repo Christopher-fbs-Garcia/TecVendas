@@ -82,7 +82,7 @@ nav a::after:hover {
 }
 
 /* Responsividade: quando a tela é menor que 768px */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 
     /* Ocultar o menu horizontal em telas pequenas */
     nav {
@@ -130,7 +130,6 @@ nav a::after:hover {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    min-height: calc(68vh - 30px);
 }
 
 .card {
@@ -138,9 +137,10 @@ nav a::after:hover {
     width: 18rem;
     align-items: center;
     justify-content: center;
-    margin-left: 2rem;
-    margin-top: 3rem;
-    margin-right: 2rem;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
     border-radius: 5%;
     transition: 0.5s;
 
@@ -152,8 +152,8 @@ nav a::after:hover {
 }
 
 .card:hover {
-    height: 24.5rem;
-    width: 18.5rem;
+    height: 25rem;
+    width: 19rem;
 }
 
 .local_produtos {
@@ -221,7 +221,7 @@ nav a::after:hover {
     justify-content: center;
 }
 
-@media (max-width :800px) {
+@media (max-width :1000px) {
     .box_produtos {
         flex-direction: column;
     }
